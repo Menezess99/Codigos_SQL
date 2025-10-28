@@ -1,0 +1,2 @@
+/*6. Faça uma tabela resumo mostrando a taxa de câmbio média de acordo com cada 
+CurrencyDescription. A tabela final deve conter apenas taxas entre 10 e 100.*/select * from FactExchangeRateselect * from DimCurrencyselect distinct CurrencyDescription, AverageRate from FactExchangeRate inner join DimCurrency on FactExchangeRate.CurrencyKey = DimCurrency.CurrencyKey where AverageRate between 10 and 100 group by AverageRate, CurrencyDescription

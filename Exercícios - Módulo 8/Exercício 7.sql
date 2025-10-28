@@ -1,0 +1,2 @@
+/*7. Algumas subcategorias não possuem nenhum exemplar de produto. Identifique que 
+subcategorias são essas.*/select * from DimProductSubcategoryselect * from DimProductselect ProductSubcategoryName, DimProduct.ProductSubcategoryKey, ProductName from DimProductSubcategory left join DimProduct on DimProductSubcategory.ProductSubcategoryKey = DimProduct.ProductSubcategoryKey where ProductName is null

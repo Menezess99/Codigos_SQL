@@ -1,0 +1,2 @@
+/*1. Utilize o INNER JOIN para trazer os nomes das subcategorias dos produtos, da tabela 
+DimProductSubcategory para a tabela DimProduct.*/select * from DimProductSubcategoryselect * from DimProductselect ProductName,DimProduct.ProductSubcategoryKey,ProductSubcategoryDescriptionfromDimProductinner join DimProductSubcategoryon DimProduct.ProductSubcategoryKey = DimProductSubcategory.ProductSubcategoryKey
